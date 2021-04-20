@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pain Link</title>
+        <link rel="stylesheet" href="stylesheet/input.css">
+        
+    </head>
+    <body>
+
+        
+
+
+        <script src="scripts/input.js"></script>
+        <div id="cat">
+            <h6>*Click <a href="#categories">here</a> for descriptions about each food group*</h6>
+        </div>
+        <label>
+        <form id="inputs" action="saveinput.php" method="POST">
+
+            <p>Date: <input name="date" type="date" id="datepicker" required></p>
+            <br />
+                    <div class="searchcity">
+                    <input class="search" name="citysearch" type="text" autocomplete="off" class="search-box" placeholder="Enter Zipcode" multiple>
+                </div>
+                <br />
+                <div class="loc">Location:</div>
+                <div id="city"> </div>
+                <br />
+                <div class="temper">Temperature:</div>
+                <div id="temp"> </div>
+                <br />
+                <div class="baro">Barometric Pressure:</div>
+                <div id="press"> </div>
+                <br />
+                <div class="humidity">Humidity:</div>
+                <div id="hum"> </div>
+
+            <h5 id="painlevel">Pain Level (0-10)</h5>
+            <input type="text" id="inputpain" class="form-control" name="painlevelinput" value placeholder="0-10" required>
+
+            <h5 id="activitylevel">Activity Level (0-10)</h5>
+            <input id="inputpain" class="form-control" name="activitylevelinput" placeholder="0-10" required>
+
+            <h5 id="drinkintake">Outside Temperature</h5>
+            <input id="inputpain" class="form-control" name="tempinput" placeholder="Temperature" required>℉
+
+            <h5 id="drinkintake">Barometric Pressure</h5>
+            <input id="inputpain" class="form-control" name="pressureinput" placeholder="Pressure" required>
+            
+            <h5 id="humidity">Humidity</h5>
+            <input id="inputpain" class="form-control" name="humidityinput" placeholder="Humidity" required>
+
+            <h5 id="foodintakesnacks">Food Intake</h5>
+            <select id="snacky" class="form-control" name="foodinput" multiple>
+                <option value="noInput">No Input</option>
+                <option value="sweets">Sweets</option>
+                <option value="dairy">Dairy</option>
+                <option value="eggs">Eggs</option>
+                <option value="fish">Fish</option> 
+                <option value="shellfish">Shellfish</option>
+                <option value="cepha">Cephalopods</option>
+                <option value="fruit">Fruit</option>
+                <option value="redmeat">Red Meat</option>
+                <option value="whitemeat">White Meat</option>
+                <option value="nuts">Nuts</option>
+                <option value="rice">Starches</option> <!--pasta, rice, potatoes-->
+                <option value="rootveg">Root/Tuberous Vegetables</option>
+                <option value="bulbveg">Bulb/Stem Vegetables</option>
+                <option value="leafyveg">Leafy Vegetables</option>
+                <option value="poddedveg">Fruity Vegetables</option>
+                <option value="crucveg">Cruciferous Vegetables</option> 
+                <option value="seaveg">Sea Vegetables</option>
+                <option value="legumes">Legumes</option> <!--beans, lentils, chickpeas, etc-->
+                <option value="cereals">Cereals</option> 
+                <option value="mushrooms">Mushrooms</option>
+                <option value="other">Other</option>
+
+            </select>
+            <h5 id="drinkintake">Non-Alcoholic Drink Intake</h5>
+            <select id="drinkintake" class="form-control" name="drinkinput" multiple>
+                <option value="noInput">No Input</option>
+                <option value="carbbev">Carbonated Beverages</option>
+                <option value="water">Water</option>
+                <option value="milk">Milk</option>
+                <option value="fruitjuice">Fruit Juice</option>
+                <option value="vegjuice">Vegetable Juice</option>
+                <option value="coffee">Coffee</option>
+                <option value="tea">Tea</option>
+                <option value="energy">Energy Drink</option>
+                <option value="smoothie">Fruit Smoothie</option>
+                <option value="protein">Protein Drink</option>
+                <option value="dessert">Dessert Drink</option>
+                <option value="other">Other</option>
+            </select>
+            <h5 id="alcintake">Alcohol Intake</h5>
+            <select id="alcoholintake" class="form-control" name="alcoholinput" multiple>
+                <option value="noInput">No Input</option>
+                <option value="whitewine">White Wine</option>
+                <option value="redwine">Red Wine</option>
+                <option value="champagne">Champagne</option>
+                <option value="beer">Beer</option>
+                <option value="whiskey">Whiskey</option>
+                <option value="vodka">Vodka</option>
+                <option value="tequila">Tequila</option>
+                <option value="moonshine">Moonshine</option>
+                <option value="hardcider">Hard Cider</option>
+                <option value="sake">Saké</option>
+                <option value="brandy">Brandy</option>
+                <option value="bourbon">Bourbon</option> <!--should i put these in with whiskey?-->
+                <option value="scotch">Scotch</option>
+                <option value="gin">Gin</option>
+                <option value="rum">Rum</option>
+                <option value="absinthe">Absinthe</option>
+                <option value="everclear">Everclear</option>
+                <option value="liqueur">Liqueur</option>
+            </select>
+            <!-- <input type="submit" class="submitting" value="Submit" id="input-submit">
+        </form> -->
+        </label>
+        <br />
+        <input type="submit" class="submitting" value="Submit" id="input-submit">
+        </form>
+        <!-- <a href="mainpage.html"><button type="submit" class="btn">Submit</button></a> -->
+        <span id="categories">
+            <div class="cats">
+            <p>Category Help: </p>
+            <br />
+            Sweets: Any baked goods or candy
+            <br />
+            <br />
+            Dairy: Milk, cheese, yogurt, etc.
+            <br />
+            <br />
+            Fish: Salmon, catfish, cod, trout, talapia, etc
+            <br />
+            <br />
+            Shellfish: Lobster, shrimp, crawfish, oysters, clam, etc
+            <br />
+            <br />
+            Cephalopod: Squid, octopus, cuttlefish, etc
+            <br />
+            <br /> 
+            Red Meat: Beef, pork, lamb, deer, boar, hare, etc
+            <br />
+            <br />
+            White Meat: Chicken, turkey, duck, etc
+            <br />
+            <br />
+            Starches: Potato, pasta, rice, some beans, etc
+            <br />
+            <br />
+            Root/Tuberous Vegetables: Beet, carrot, ginger, turnip, etc
+            <br />
+            <br />
+            Bulb/Stem Vegetables: Garlic, onion, asparagus, celery, etc
+            <br />
+            <br />
+            Leafy Vegetables: Cabbage, spinach, brussel sprout, lettuce, kale, etc
+            <br />
+            <br />
+            Fruity Vegetables: Tomato, cucumber, eggplant, avocado, etc
+            <br />
+            <br />
+            Cruciferous Vegetables: Broccoli, cauliflower, artichoke, etc
+            <br />
+            <br />
+            Sea Vegetables: Seaweed, kelp, nori, etc
+            <br />
+            <br />
+            Legumes: Beans, peas, lentils, etc
+            <br />
+            <br />
+            Cereals: Wheat, oats, rice, rye, barley, corn, quinoa, etc
+            </div>
+        </span>
+        <script src="scripts/input.js"></script>
+        <script src="scripts/calendar.js"></script>
+    </body>
+
+
+</html>

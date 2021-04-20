@@ -1,0 +1,22 @@
+body {
+    background: beige;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+	font-size: 20px;
+}
+
+button {
+	float: right;
+}
+
+footer {
+	margin-top: 270px;
+}
+
+#datepicker {
+	width: 75%;
+	font-size: 20px;
+}
+

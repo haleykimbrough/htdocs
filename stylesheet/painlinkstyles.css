@@ -1,0 +1,38 @@
+html, body {
+    background: beige;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    color: navy;
+    font-size: 200px;
+    margin-bottom: 5px;
+}
+
+
+.accountStuff {
+    text-align: center;
+    
+}
+
+.btn {
+    margin-top: 60px;
+    width: 50%;
+    height: 90px;
+    font-size: 50px;
+    border-radius: 55px;
+    background: #eea9e8;
+    padding: 20px;
+    height: 100px;
+}
+
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    color: navy;
+}

@@ -1,0 +1,94 @@
+html {
+    background: beige;
+}
+
+p {
+    font-size: 80px;
+    text-align: center;
+}
+
+.searchcity {
+    text-align: center;
+}
+
+.search {
+    text-align: center;
+    font-size: 30px;
+}
+
+.datetime {
+    font-size: 60px;
+    text-align: center;
+}
+
+.loc {
+    text-align: center;
+}
+
+#city {
+    text-align: center;
+}
+
+
+.temper {
+    text-align: center;
+}
+
+#temp {
+    text-align: center;
+}
+
+.baro {
+    text-align: center;
+}
+
+#press {
+    text-align: center;
+}
+
+.humidity {
+    text-align: center;
+}
+
+#hum {
+    text-align: center;
+}
+
+select {
+    font-size: 50px;
+    width: 25%;
+}
+
+h5 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#cat {
+    font-size: 30px;
+}
+
+p {
+    margin-top: 100px;
+    font-size: 30px;
+    margin-bottom: 1px;
+}
+
+.cats {
+    margin-top: 5px;
+    font-size: 30px;
+}
+
+#foodInput {
+    font-size: 40px;
+}
+
+.submitting {
+    float: right;
+    margin-right: 60px;
+    font-size: 50px;
+}
+
+#inputpain {
+    font-size: 50px;
+}

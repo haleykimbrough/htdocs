@@ -1,0 +1,30 @@
+body, html {
+    background: beige;
+}
+
+header {
+    text-align: center;
+    font-size: 150px;
+    margin-top: 8%;
+    margin-bottom: 25%;
+}
+
+.form-group {
+    text-align: center;
+    display: block;
+    margin : 0 auto;
+}
+
+.form-control {
+    font-size: 80px;
+}
+
+.accountStuff {
+    text-align: center;
+    font-size: 40px;
+}
+
+.btn {
+    font-size: 50px;
+    margin-top: 70px;
+}

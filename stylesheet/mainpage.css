@@ -1,0 +1,53 @@
+html {
+    background: beige;
+}
+
+#myChart {
+    margin-top: 100px;
+}
+
+.btn {
+    float: left;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    position: relative;
+    font-size: 80px;
+}
+
+.btn2 {
+    float: right;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    position: relative;
+    font-size: 80px;
+}
+
+.triggers {
+    font-size: 50px;
+    float: left;
+}
+
+.btnlogout {
+    float: left;
+    font-size: 30px;
+    position: relative;
+}
+
+footer {
+    position: absolute;
+    margin-top: 580px;
+    width: 100%;
+    font-size: 50px
+}
+
+.instructions {
+    font-size: 60px;
+    text-align: center;
+}
+
+#dateTime {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 30px;
+}
+
